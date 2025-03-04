@@ -1,6 +1,5 @@
 // live2d_path 参数建议使用绝对路径
-const live2d_path = "/live2d-widget/";;
-//const live2d_path = "/live2d-widget/";
+const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -35,7 +34,7 @@ if (screen.width >= 768) {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
-			cdnPath: "https://gcore.jsdelivr.net/npm/yzs-live2d_src@1.1.0/",
+			cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
 			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
 		});
 	});
